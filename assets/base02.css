@@ -1,0 +1,252 @@
+﻿@charset "utf-8";
+
+/* フォント読み込み
+------------------ */
+@font-face{
+	font-family:"NotoSansCJKjp";
+	src:url("https://sekaiparking.jts-jobs.com/font/NotoSansCJKjp.woff") format("woff"), url("../font/NotoSansCJKjp.otf.html") format("opentype");
+}
+
+/* base
+------------------ */
+/* reset */
+html,body,div,h1,h2,h3,h4,h5,h6,p,blockquote,q,pre,table,caption,colgroup,col,tbody,thead,tfoot,tr,th,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,label,span,a,img,em,ins,del,cite,abbr,sup,sub,dfn,code,var,samp,kbd,object,script,noscript,style,iframe,embed,param,map,area,menu,hr,address,small,strong,i,b,article,aside,figure,footer,header,hgroup,nav,section,figcaption,time,video,audio,mark,ruby,rt,rp,bdo,source,canvas,details,summary,command,datalist,keygen,output,progress,meter{margin:0;padding:0;outline:0;}
+address,article,aside,figure,figcaption,footer,header,hgroup,hr,legend,menu,nav,section,summary{display:block;}
+
+/* body */
+body{
+	color:#333;
+	line-height:1.7;
+	font-size:87.5%;/*14px*/
+	font-family:Meiryo, sans-serif;
+	word-break:break-all;
+	border-top:4px solid #00cef3;
+}
+
+@media screen and (orientation:landscape){
+body{
+	-webkit-text-size-adjust:100%;
+}
+}
+
+input,textarea,button{
+	font-family:Meiryo, sans-serif;
+}
+
+/* リンク */
+a:link{color:#0070ad;text-decoration:underline;}
+a:visited{color:#865d86;text-decoration:underline;}
+a:hover{color:#288ec6;text-decoration:none;}
+
+/* タグ共通 */
+img{border:none;max-width:100%;}
+p{margin:0 0 1.5rem 0;}
+hr{border:none;border-top:1px solid #ccc;margin:3rem auto;clear:both;}
+table{empty-cells:show;border:none;border-collapse:collapse;max-width:100%;}
+
+/*テキスト揃え*/
+.ac{text-align:center;}
+.al{text-align:left;}
+.ar{text-align:right;}
+.vam{vertical-align:middle;}
+.vat{vertical-align:top;}
+
+/*フロート*/
+.fl{float:left;}
+.fr{float:right;}
+.cl{clear:both;}
+
+/*マージン*/
+.ma{margin-right:auto;margin-left:auto;}
+.ml{margin-left:1rem;}
+.mr{margin-right:1rem;}
+.mb{margin-bottom:1rem;}
+.mb0{margin-bottom:0;}
+
+/* エフェクト */
+.fade:hover{opacity:0.7;transition:0.2s;}
+
+/* スタイル
+------------------ */
+/* 見出し */
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+}
+
+/*中ページ大見出し*/
+.h01{
+	background:#00cef3;
+	padding:1rem;
+	text-align:center;
+	color:#fff;
+	line-height:1.0;
+}
+
+.h01 span{
+	display:block;
+}
+
+.h01 .icon{
+	font-size:400%;
+	margin-bottom:0.5rem;
+}
+
+.h01_text{
+	font-size:200%;
+}
+
+@media screen and (min-width: 798px){
+.h01{
+	padding:2rem 1rem;
+}
+}
+
+@media print, screen and (min-width: 980px){
+.h01{
+	padding:2rem 0;
+}
+}
+
+/*index見出し*/
+.h02{
+	margin-bottom:2rem;
+	font-size:200%;
+	line-height:1.2;
+}
+
+.h02:before{
+	content:"";
+	display:inline-block;
+	width:8px;
+	height:1.6rem;
+	background:#00cef3;
+	vertical-align:middle;
+	margin:-0.2rem 0.7rem 0 0;
+}
+
+/* ボタン */
+.button{
+	border:none;
+	border-radius:3px;
+	font-size:114.29%;
+	line-height:1.2;
+	padding:0.8rem 2.5rem 0.6rem 2.5rem;
+	cursor:pointer;
+	transition:0.4s;
+	outline:none;
+	display:inline-block;
+	position:relative;
+	z-index:2;
+}
+
+a.button{
+	text-decoration:none;
+}
+
+.button:before, .button:after{
+	position:absolute;
+	z-index:-1;
+	display:block;
+	content:'';
+	top:0;
+	width:50%;
+	height:100%;
+	transition:0.4s;
+}
+
+.button:before{
+	right:0;
+}
+
+.button:after{
+	left:0;
+}
+
+.button:hover:before, .button:hover:after{
+	width:0;
+}
+
+/*ボタン1*/
+.button_primary{
+	color:#fff!important;
+	background:#66e2f8;
+	box-shadow:0 4px 0 #007c92;
+}
+
+.button_primary:hover{
+	box-shadow:0 4px 0 #00a5c2;
+}
+
+.button_primary:before, .button_primary:after{
+	background:#00cef3;
+}
+
+.button_primary:hover:before, .button_primary:hover:after{
+	background:#66e2f8;
+}
+
+/* テーブル */
+.table{
+	width:100%;
+	border:1px solid #ccc;
+	margin-bottom:1.5rem;
+}
+
+.table caption{
+	background:#00a5c2;
+	color:#fff;
+	font-weight:bold;
+	padding:0.8rem 0;
+	border-radius:3px 3px 0 0;
+}
+
+.table th{
+	border:1px solid #ccc;
+	padding:1rem;
+	text-align:left;
+	background:#f8f8ed;
+}
+
+.table td{
+	border:1px solid #ccc;
+	padding:1rem;
+}
+
+.table_horizontal th{
+	text-align:center;
+}
+
+.table_horizontal td{
+	text-align:center;
+}
+
+/*テキスト関係*/
+.smaller{font-size:85.71%;}/*12px*/
+.larger{font-size:142.86%;}/*20px*/
+.bold{font-weight:bold;}
+.normal{font-weight:normal;}
+.red{color:#e70012;}
+.gray{color:#666;}
+.key_color{color:#00cef3;}
+.highlight{background:-webkit-gradient(linear, left top, left bottom, from(#ffec95), to(#ffec95));background:linear-gradient(transparent 55%, #ffec95 55%);}
+.nsc{font-family:"NotoSansCJKjp", Meiryo, sans-serif;}
+.en{font-family:"Raleway", sans-serif;}
+.spbl{display:block;}
+@media print, screen and (min-width: 798px){.spbl{display:inline;}}
+
+/*リスト*/
+li{list-style:none;}
+ul.list_mark{margin-bottom:1.5rem;}
+ul.list_mark li{list-style:disc;margin-left:1.5em;}
+ol.list_mark{margin-bottom:1.5rem;}
+ol.list_mark li{list-style:decimal;margin-left:1.5rem;}
+dl.dl_default{margin-bottom:1.5rem;}
+dl.dl_default dt{font-weight:bold;}
+dl.dl_default dd{margin-left:1em;}
+
+/* アコーディオン */
+.trg{
+	cursor:pointer;
+}
+
+/*eof*/

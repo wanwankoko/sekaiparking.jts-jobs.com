@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* MV
+------------------ */
+#index_mv{
+	text-align:center;
+	background:url(https://sekaiparking.jts-jobs.com/img_index/bg01.jpg) repeat-x 0 0;
+	background-size:contain;
+}
+
+/* h1
+------------------ */
+#index_h1{
+	text-align:center;
+	margin:-1rem 1rem 1rem 1rem;
+}
+
+#index_h1 span{
+	display:block;
+	color:666;
+	padding-bottom:0.5rem;
+	font-weight:normal;
+}
+
+@media print, screen and (min-width: 980px){
+#index_h1{
+	margin:-3rem 0 1.5rem 0;
+}
+}
+
+#index_contact{
+	display:none;
+}
+
+@media print, screen and (min-width: 980px){
+#index_contact{
+	display:table;
+}
+}
+
+@media print, screen and (min-width: 980px){
+	.column_2{
+		display: flex;
+		width: 980px;
+		padding: 1rem;
+		margin: 0 auto;
+		box-sizing: border-box;
+		justify-content:space-around;
+	}
+	
+	.text_box{
+		width: 80%;
+    	margin-right: 2rem;
+	}
+	
+	#monthly_c{
+		width: 100%;
+		box-sizing: border-box;
+	}
+		
+}
+
+/* 料金
+------------------ */
+#price{
+	background:#fffc1e url(https://sekaiparking.jts-jobs.com/img/bg01.gif);
+	padding:3rem 1rem;
+}
+
+@media print, screen and (min-width: 980px){
+#price{
+	padding:4rem 0;
+}
+}
+
+.monthly_plan{
+	background:#cd0000;
+	text-align:center;
+	color:#fff;
+	padding:1.5rem 1rem;
+	margin-bottom:3rem;
+}
+
+.monthly_plan img{
+	display:block;
+	margin:0 auto 0.5rem auto;
+}
+
+@media print, screen and (min-width: 798px){
+#monthly{
+	overflow:hidden;
+}
+
+.monthly_plan{
+	padding:2rem 1rem;
+	width:46%;
+}
+
+#monthly_a{
+	float:left;
+}
+
+#monthly_b{
+	float:right;
+}
+}
+
+/* 地図
+------------------ */
+#access{
+	padding:3rem 1rem;
+}
+
+@media print, screen and (min-width: 980px){
+#access{
+	padding:4rem 0;
+}
+}
+
+@media print, screen and (min-width: 798px){
+#access .spbl:after{
+	content:"　";
+}
+}
+
+#map{
+	margin-bottom:2rem;
+}
+
+#map iframe{
+	display:block;
+	width:100%;
+	min-height:400px;
+}
+
+@media print, screen and (min-width: 980px){
+#map iframe{
+	min-height:500px;
+}
+}
+
+/*eof*/
