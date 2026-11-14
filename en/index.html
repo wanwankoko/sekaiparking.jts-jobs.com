@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)/ -->
+<html lang="en"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Parking near Narita Airport｜¥500/day・Free Shuttle｜SEKAI PARKING NARITA</title>
+<meta name="description" content="SEKAI PARKING NARITA near Narita Airport. Basic plan ¥500 per day, ¥300 per day from day 8. Free shuttle included. Right next to Toyoko INN.">
+<meta name="keywords" content="成田,駐車場,空港,格安,日額,送迎,パーキング,成田空港">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<script type="text/javascript" async="" src="../assets/js"></script><script async="" src="../assets/analytics.js"></script><script src="../assets/jquery.min.js"></script>
+<script src="../assets/common.js"></script>
+<link rel="stylesheet" href="../assets/fontello.css">
+<link rel="stylesheet" href="../assets/base02.css">
+<link rel="stylesheet" href="../assets/common02.css">
+<link href="../assets/css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/index02.css">
+<style>
+/* Parking Fees（画像なし・CSSのみ） */
+.fee-card {
+	max-width: 640px;
+	margin: 1em auto 1.25em;
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+	box-shadow: 0 4px 14px rgba(0,0,0,.12);
+}
+.fee-card__head {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	background: #1a3555;
+	color: #fff;
+	padding: 12px 16px;
+	font-weight: 700;
+	font-size: clamp(1.05rem, 3.5vw, 1.35rem);
+	letter-spacing: .04em;
+}
+.fee-card__head-accent {
+	flex-shrink: 0;
+	width: 10px;
+	height: 32px;
+	background: #ffd400;
+	border-radius: 1px;
+}
+.fee-card__body {
+	background: #2d8f47;
+	border: 3px solid #fff;
+	padding: 12px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.fee-card__row {
+	background: #fff;
+	border-radius: 6px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.fee-card__row--plan {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px 18px;
+	padding: 14px 16px;
+	font-weight: 700;
+}
+.fee-card__plan-name {
+	color: #111;
+	font-size: 1.1rem;
+}
+.fee-card__car {
+	font-size: 1.75rem;
+	line-height: 1;
+	filter: saturate(1.1);
+}
+.fee-card__shuttle {
+	color: #2d8f47;
+	font-size: 1.1rem;
+}
+.fee-card__row--price {
+	display: flex;
+	align-items: stretch;
+	min-height: 100px;
+}
+.fee-card__arrow {
+	flex: 0 0 38%;
+	min-width: 120px;
+	background: #e53935;
+	clip-path: polygon(0 0, 78% 0, 100% 50%, 78% 100%, 0 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: clamp(.95rem, 2.8vw, 1.1rem);
+	line-height: 1.25;
+	text-align: center;
+	padding: 8px 12px 8px 8px;
+	box-sizing: border-box;
+}
+.fee-card__arrow-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+}
+.fee-card__price-side {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 8px;
+	position: relative;
+	min-height: 100px;
+}
+.fee-card__burst {
+	position: absolute;
+	width: min(140px, 42vw);
+	height: min(140px, 42vw);
+	background: #ffeb3b;
+	clip-path: polygon(
+		50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+		50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+	);
+	z-index: 0;
+}
+.fee-card__yen {
+	position: relative;
+	z-index: 1;
+	font-size: clamp(2rem, 9vw, 3rem);
+	font-weight: 800;
+	color: #e53935;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	text-shadow:
+		0 0 1px #ffeb3b,
+		0 0 2px #ffeb3b,
+		1px 0 0 #ffeb3b, -1px 0 0 #ffeb3b,
+		0 1px 0 #ffeb3b, 0 -1px 0 #ffeb3b,
+		1px 1px 0 #ffeb3b, -1px -1px 0 #ffeb3b,
+		1px -1px 0 #ffeb3b, -1px 1px 0 #ffeb3b;
+}
+.fee-card__row--extra {
+	display: flex;
+	align-items: stretch;
+	min-height: 56px;
+}
+.fee-card__extra-left {
+	flex: 1;
+	background: #ffeb3b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 10px;
+	font-weight: 700;
+	color: #111;
+	font-size: clamp(.85rem, 2.5vw, 1rem);
+	text-align: center;
+	line-height: 1.35;
+}
+.fee-card__extra-right {
+	flex: 1;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 10px;
+	font-weight: 800;
+	color: #e53935;
+	font-size: clamp(1.15rem, 4vw, 1.5rem);
+	border-left: 2px solid rgba(45,143,71,.25);
+}
+@media (max-width: 380px) {
+	.fee-card__row--price { flex-direction: column; }
+	.fee-card__arrow {
+		flex: none;
+		width: 100%;
+		min-height: 64px;
+		clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%);
+		padding: 10px;
+	}
+	.fee-card__arrow-inner { flex-direction: row; gap: 6px; }
+}
+</style>
+
+<meta property="og:title" content="Parking near Narita Airport｜¥500/day・Free Shuttle｜SEKAI PARKING NARITA">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sekaiparking.jts-jobs.com/en/">
+<meta property="og:image" content="/share/img/ogp.jpg">
+<meta property="og:site_name" content="SEKAI PARKING NARITA (Narita Airport)">
+<meta property="og:description" content="Basic plan ¥500 per day, ¥300 per day from day 8. Free shuttle included.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:title" content="Parking near Narita Airport｜¥500/day・Free Shuttle｜SEKAI PARKING NARITA">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" hreflang="ja" href="https://sekaiparking.jts-jobs.com/"><link rel="alternate" hreflang="vi" href="https://sekaiparking.jts-jobs.com/vi/"><link rel="alternate" hreflang="en" href="https://sekaiparking.jts-jobs.com/en/">
+</head>
+<body>
+<div style="text-align:right;padding:10px 14px;font-size:15px;background:#f4f6f8;"><a href="../index.html">日本語</a> ｜ <a href="../vi/index.html">Tiếng Việt</a> ｜ <strong>English</strong></div>
+<header id="header_sp">
+	<h1 class="sp_logo"><a href="index.html"><span style="font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif;font-weight:800;letter-spacing:.03em;color:#1b9bd8;white-space:nowrap;font-size:clamp(16px,5vw,24px);">SEKAI PARKING <span style="color:#1a3555;">NARITA</span></span></a></h1>
+	<ul>
+		<li id="header_sp_tel"><span class="call_link"><span class="icon-phone-squared key_color"></span>Call</span></li>
+	</ul>
+</header>
+<main>
+	<div id="index_mv">
+		<img src="../assets/banner1.png" alt="SEKAI PARKING NARITA near Narita Airport　¥500 per day・Free shuttle">
+	</div>
+	
+	<h1 id="index_h1"><span>Narita Airport Parking・Free Shuttle</span><span style="font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif;font-weight:800;letter-spacing:.03em;color:#1b9bd8;white-space:nowrap;font-size:clamp(27px,8.5vw,42px);">SEKAI PARKING <span style="color:#1a3555;">NARITA</span></span></h1>
+	
+	<div class="contact" id="index_contact">
+		<ul>
+			<li class="contact_tel"><span class="call_link"><img src="../assets/tel01b.png" alt="Tel: 070-4350-4367" style="width:292px;height:31px"></span><br>
+			Phone hours 9:00–20:00</li>
+			<li class="contact_address">〒286-0107 千葉県成田市堀之内160（<a href="index.html#access">See the map</a>）<br>
+			24-hour free access</li>
+		</ul>
+	</div>
+	
+	<div id="price">
+		<div class="wide_width">
+			
+		<div>
+			<div class="fee-card" role="region" aria-label="Parking Fees">
+				<div class="fee-card__head">
+					<span class="fee-card__head-accent" aria-hidden="true"></span>
+					<h2 class="fee-card__head-title" style="margin:0;font-size:inherit;font-weight:inherit;">Parking Fees</h2>
+				</div>
+				<div class="fee-card__body">
+					<div class="fee-card__row fee-card__row--plan">
+						<span class="fee-card__plan-name">Basic Plan</span>
+						<span class="fee-card__car" aria-hidden="true">🚗</span>
+						<span class="fee-card__shuttle">Free Shuttle</span>
+					</div>
+					<div class="fee-card__row fee-card__row--price">
+						<div class="fee-card__arrow">
+							<div class="fee-card__arrow-inner">
+								<span>Per</span>
+								<span>Day</span>
+							</div>
+						</div>
+						<div class="fee-card__price-side">
+							<span class="fee-card__burst" aria-hidden="true"></span>
+							<span class="fee-card__yen">¥500</span>
+						</div>
+					</div>
+					<div class="fee-card__row fee-card__row--extra">
+						<div class="fee-card__extra-left">From day 8, per day</div>
+						<div class="fee-card__extra-right">¥300</div>
+					</div>
+				</div>
+			</div>
+			
+			<p>SEKAI PARKING NARITA is a car park for travellers using Narita Airport.<br>
+			<span class="red bold">✓Free shuttle ✓Right next to Toyoko INN</span><br>
+			<span class="smaller">(*Please call us to confirm rates and conditions)</span></p>
+			
+			<p class="bold larger ac">Bookings &amp; enquiries by phone!<br>
+			Phone hours 9:00–20:00<br>
+			<a href="tel:07043504367">070-4350-4367</a><br>
+			</p>
+		</div>
+			<!--<div id="monthly">
+				
+				<div class="monthly_plan" id="monthly_c">
+					<img src="img_index/ba03b.png" alt="成田空港勤務者必見!!東横INNそば 税込4,000円/月">
+					<img src="img_index/ba05.png" alt="成田空港勤務者向け！東横INN（東横イン）すぐそば！">
+					<p>■駐車場：SEKAI PARKING NARITA（成田市堀之内160）</p>
+					<a href="tel:07043504367"><img src="img_index/ba04.png" alt="【詳しくは下記へお問い合わせください】成田空港勤務者向け月極駐車場受付専用TEL：070-4350-4367"></a>
+				</div>
+			</div>-->
+		
+		</div>
+	</div>
+	
+	<div id="inquiry">
+		<div class="wide_width ac" style="margin-bottom:2.5em;padding:1em 0;">
+			<p style="font-size:1.125rem;margin-bottom:1rem;">Book online</p>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdXhcEXUWRhsqLc8sOMw0rktZnXbeKC8ijpnlrhfhNRHNe55w/viewform" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#2d8f47;color:#fff;font-size:clamp(1.25rem,5vw,1.75rem);font-weight:bold;line-height:1.3;text-decoration:none;padding:16px 38px;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,.18);">Book Your Parking</a>
+		</div>
+	</div>
+	
+	<div id="access">
+		<div class="wide_width">
+			
+			<h2 class="h02 nsc">Access &amp; Map</h2>
+			<p><span class="bold">[SEKAI PARKING NARITA (Parking near Narita Airport)]</span><br>
+			<span class="spbl"><span class="key_color icon-location"></span>〒286-0107 千葉県成田市堀之内160</span></p>
+			<div id="map">
+				<iframe src="../assets/embed.html" width="100%" height="480" style="border:none;"></iframe>
+			</div>
+		</div>
+	</div>
+	
+
+</main>
+
+<div class="contact">
+	<ul>
+		<li class="contact_tel"><span class="call_link"><img src="../assets/tel01b.png" alt="Tel: 070-4350-4367" style="width:292px;height:31px"></span><br>
+		Phone hours 9:00–20:00<br></li>
+		<li class="contact_address">〒286-0107 千葉県成田市堀之内160（<a href="index.html#access">See the map</a>）<br>
+		24-hour free access</li>
+	</ul>
+</div>
+	
+<!-- <div class="ba_wrap"><a href="http://sekaiparking.jts-jobs.com/yukawa/index.html" target="_blank"><img src="/assets/ba_yukawa.jpg" alt="成田湯川駅近 月極駐車場 5,000円(税込)"></a></div> -->
+
+<div id="copy">
+	SEKAI PARKING NARITA<br>
+	<span class="en">2026 © SEKAI PARKING</span>
+</div>
+
+
+
+</body></html>
