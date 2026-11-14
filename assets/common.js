@@ -4,8 +4,8 @@ $(function() {
 		if ( !navigator.userAgent.match(/Safari/) || !navigator.userAgent.match(/Mobile/) ) {
 			return;
 		}
-		var tel = '0476321830';
-		var name = '平成ウィングパーキング';
+		var tel = '07043504367';
+		var name = 'SEKAI PARKING NARITA';
 		$(this).wrapInner('<a href="tel:' + tel + '" title="' + name + 'へ電話をかけます。"></a>')
 		.click( function(){
 			return confirm( name + '（' + tel + '）へ電話をかけます。\nよろしいですか？' );
